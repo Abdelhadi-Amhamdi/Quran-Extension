@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img {
+  font-weight: 600;
+  font-family: "Josefin sans";
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 90.1%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+}
+.for-phone {
+  display: none;
+}
+.main {
+  position: absolute !important;
+  top: 10px;
+  width: 100%;
+  height: 90vh;
+}
+#particles-js {
+  z-index: 2 !important;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.219) !important;
+}
+.quran {
+  background-color: rgba(0, 0, 0, 0.61);
+  margin-top: 10%;
+  transform: translateY(-30%);
+  box-shadow: rgba(0, 0, 0, 0.383) 0px 5px 3px;
+  width: 80%;
+  min-height: 40vh;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2.75;
+  font-size: 2rem;
+  font-family: monospace;
+  color: white;
+  border-radius: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 3 !important;
+  position: absolute;
+  
+}
+
+.buttons {
+  padding: 20px;
+  height: fit-content;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  z-index: 3;
+}
+.buttons button {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(2, 2, 2, 0.705);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  font-weight: bolder;
+  outline: none;
+}
+
+.bars {
+  position: absolute;
+  padding: 20px;
+  font-size: 2rem;
+  z-index: 3;
+  cursor: pointer;
+  color: white;
+}
+
+.menu {
+  display: none;
+  width: 260px;
+  background: #212529;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  color: white;
+  padding-top: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+.quran::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+  width: 5px;
+}
+.quran::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+.show {
+  display: block !important;
+  
+}
+.close {
+  position: absolute;
+  padding: 20px;
+  font-size: 2rem;
+  z-index: 5;
+  cursor: pointer;
+  left: 200px;
+  display: none;
+}
+.close .fa {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+.menu ul h4 {
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.menu h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.list-of-themes li img {
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+  cursor: pointer;
+  /* border-radius: 30px; */
+}
+.list-of-themes li img.active {
+  padding: 2px;
+  border: 4px solid rgba(112, 112, 112, 0.616);
+}
+
+.list-of-themes {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  overflow-y: hidden;
+  margin-top: 45px;
+}
+.parametres {
+  margin-top: 45px;
+}
+.list-of-themes::-webkit-scrollbar {
+  margin-top: 20px;
+  background-color: gainsboro;
+  height: 5px;
+}
+
+.list-of-themes::-webkit-scrollbar-thumb {
+  background-color: rgb(78, 78, 78);
+}
+

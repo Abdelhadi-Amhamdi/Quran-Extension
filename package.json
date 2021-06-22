@@ -1,0 +1,10 @@
+{
+  "name": "quran extention",
+  "version": "1.0.0",
+  "description": "",
+  "permissions" : ["storage"],
+  "chrome_url_overrides" : {
+    "newtab" : "index.html"
+  },
+  "mainfest_version" : 2
+}

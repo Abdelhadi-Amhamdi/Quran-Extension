@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/js tools/particles.js-master/demo/css/style.css" />
+    <link rel="stylesheet" href="./assets/css tools/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css tools/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="bars">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="close">
+        <i class="fa fa-angle-double-left"></i>
+    </div>
+    <div class="menu">
+
+      <h4>Apperance :</h4>
+      <ul class="list-of-themes">
+        <li>
+          <img src="./assets/images/Afterglow.png" class="bg active">
+        </li>
+        <li>
+          <img src="./assets/images/Taj Mahal.jpg" class="bg">
+        </li>
+        <li>
+          <img src="./assets/images/pexels-abdulmeilk-aldawsari-36704.jpg" class="bg">
+        </li>
+      </ul>
+
+
+        <ul class="parametres">
+            <li><h4>Content :</h4></li>
+            <li>
+                <div class="form-group">
+                    <label>Sura :</label>
+                    <select class="form-control select-warning sura_selection" >
+                      <option>Random</option>
+                      <option>Al Fatiha</option>
+                      <option>The Cow</option>
+                      <option>Al Falaq</option>
+                    </select>
+                  </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label>Language :</label>
+                    <select class="form-control lang_selection">
+                      <option>Arabic</option>
+                      <option>English</option>
+                    </select>
+                  </div>
+
+                  
+            </li>
+            <li>
+                <div class="form-group">
+                  <label for="number">Number Of Ayat: </label>
+                  <select class="form-control num_selection" name="number" id="number">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="particles-js"></div>
+    <div class="img">
+      <img src="./assets/images/Afterglow.png" class="bg-image" />
+    </div>
+    <div class="main">
+      <div class="quran"></div>
+      <div class="buttons">
+        <button class="prev">
+          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        </button>
+        <button class="next">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <p class="test"></p>
+
+    <script src="./assets/app.js"></script>
+    <!-- <script src="./test.js"></script> -->
+    <script src="./assets/js tools/particles.js-master/particles.min.js"></script>
+    <script src="./assets/js tools/particles.js-master/demo/js/app.js"></script>
+  </body>
+</html>
