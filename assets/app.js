@@ -11,6 +11,10 @@ const Backgrounds_images = document.querySelectorAll(".bg");
 const background_image = document.querySelector(".bg-image");
 const language_selection = document.querySelector(".lang_selection");
 const number_of_ayat_selection = document.querySelector(".num_selection");
+const select = document.querySelector('#number')
+const allOption = select.querySelectorAll('option')
+const numberofayat = localStorage.getItem('numofaya')
+const optionsec = document.getElementById(`op${numberofayat}`)
 
 // local variables
 
@@ -19,20 +23,38 @@ let arr;
 let R;
 let sura;
 let src ;
+let numofAya
 
 // events
 
 // get content
 document.addEventListener("DOMContentLoaded", () => {
+  
+  allOption.forEach(option => {
+    option.removeAttribute('selected')
+  })
+  optionsec.setAttribute('selected' , 'selected')
+  
   R = (Math.random() * 100).toFixed();
   import("../data/content.js").then((text) => {
     arr = text.content;
-    currentText = arr[R].aya;
-    section.textContent = currentText;
-    console.log(arr)
-    // for(var i = 0 ; i <arr.length ; i++) {
-    //   section.append(arr[i].aya)
-    // }
+    if(Number(numberofayat) == 1) {
+      currentText = arr[R].aya
+      section.textContent = currentText;
+    }
+    if(Number(numberofayat) == 2) {
+      currentText = arr[R].aya + arr[Number(R) + 1].aya
+      section.textContent = currentText;
+    }
+    if(Number(numberofayat) == 3) {
+      currentText = arr[R].aya + arr[Number(R) + 1].aya + arr[Number(R) + 2].aya
+      section.textContent = currentText;
+    }
+    if(Number(numberofayat) == null) {
+      currentText = arr[R].aya
+      section.textContent = currentText;
+    }
+    
     const img = document.querySelector('.bg-image')
     src = localStorage.getItem('backgound')
     img.setAttribute('src', src)
@@ -77,16 +99,17 @@ function getAyat(e) {
 
 // get multiple ayat
 function getMulAya(e) {
-  const data = e.target.value;
-  if (data === "1") {
+  numofAya = e.target.value;
+  localStorage.setItem('numofaya' , numofAya)
+  if (numofAya === "1") {
     currentText = arr[R].aya;
     section.textContent = currentText;
   }
-  if (data === "2") {
+  if (numofAya === "2") {
     currentText = arr[R].aya + arr[Number(R) + 1].aya;
     section.textContent = currentText;
   }
-  if (data === "3") {
+  if (numofAya === "3") {
     currentText = arr[R].aya + arr[Number(R) + 1].aya + arr[Number(R) + 2].aya;
     section.textContent = currentText;
   }
