@@ -1,6 +1,6 @@
 // selects
 
-const section = document.querySelector(".quran");
+const section = document.querySelector(".quran-text");
 const nextButton = document.querySelector(".next");
 const prevButton = document.querySelector(".prev");
 const menu = document.querySelector(".menu");
