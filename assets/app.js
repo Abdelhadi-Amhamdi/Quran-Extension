@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if(Number(numberofayat) == 3) {
       currentText = arr[R].aya + arr[Number(R) + 1].aya + arr[Number(R) + 2].aya
-      section.textContent = currentText;
+      section.innerText = currentText;
     }
     if(Number(numberofayat) == null) {
       currentText = arr[R].aya
