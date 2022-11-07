@@ -1,126 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- used font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <!-- aos for animations -->
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <!-- mine style -->
+    <link rel="stylesheet" href="./app.css">
     <title>Quran</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="./assets/js tools/particles.js-master/demo/css/style.css" />
-    <link rel="stylesheet" href="./assets/css tools/font-awesome.min.css" />
-    <link rel="stylesheet" href="./assets/css tools/bootstrap.min.css">
-  </head>
-  <body>
-    <div class="bars">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+    <audio class="audio" src=""></audio>
+    <link rel="shortcut icon" href="./assets/mic-dynamic-color.svg" type="image/x-icon">
+</head>
+
+<body class="body">
+
+    <div data-aos="fade-down-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" class="bolls">
+        <img src="./assets/Group 10.svg" alt="">
     </div>
-    <div class="close">
-        <i class="fa fa-angle-double-left"></i>
-    </div>
-    <div class="menu">
 
-      <h4>Apperance :</h4>
-      <ul class="list-of-themes">
-        <li>
-          <img src="./assets/images/1.png" class="bg active">
-        </li>
-        <li>
-          <img src="./assets/images/2.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/3.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/4.png" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/5.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/6.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/7.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/8.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/9.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/10.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/11.jpg" class="bg">
-        </li>
-        <li>
-          <img src="./assets/images/12.jpg" class="bg">
-        </li>
-      </ul>
+    <nav class="nav">
+        <div class="user">
+            <div class="avatar">
+                <img src="./assets/boy-dynamic-color.svg" alt="">
+            </div>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <div class="language">
+                        <img src="./assets/bucket-dynamic-color.svg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="theme">
+                        <img src="./assets/pin-dynamic-color.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="theme">
+                        <img src="./assets/sun-dynamic-color.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-
-        <ul class="parametres">
-            <li><h4>Content :</h4></li>
-            <li>
-                <div class="form-group">
-                    <label>Sura :</label>
-                    <select class="form-control select-warning sura_selection" >
-                      <option>Random</option>
-                      <option>Al Fatiha</option>
-                      <option>The Cow</option>
-                      <option>Al Falaq</option>
-                    </select>
-                  </div>
-            </li>
-            <li>
-                <div class="form-group">
-                    <label>Language :</label>
-                    <select class="form-control lang_selection">
-                      <option>Arabic</option>
-                      <option>English</option>
-                    </select>
-                  </div>
-
-                  
-            </li>
-            <li>
-                <div class="form-group">
-                  <label for="number">Number Of Ayat: </label>
-                  <select 
-                    class="form-control num_selection" 
-                    name="number" 
-                    id="number" 
-                  >
-                    <option id="op1">1</option>
-                    <option id="op2" selected="selected">2</option>
-                    <option id="op3">3</option> 
-                  </select>
+    <section class="body-data">
+        <div class="quran-text">
+            <div class="data">
+                <div class="text-ar">
+                    <h2 class="title"></h2>
+                    <p class="text"></p>
                 </div>
-            </li>
-        </ul>
-    </div>
-    <div id="particles-js"></div>
-    <div class="img">
-      <img src="./assets/images/Afterglow.png" class="bg-image" />
-    </div>
-    <div class="main">
-      <div class="quran">
-        <p class="quran-text"></p>
-      </div>
-      <div class="buttons">
-        <button class="prev">
-          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-        </button>
-        <button class="next">
-          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <p class="test"></p>
+            </div>
+        </div>
+        <div class="quran-audio">
+            <div class="player">
+                <div class="icon">
+                    <div class="circle">
+                        <img src="./assets/mic-dynamic-color.svg" alt="">
+                    </div>
+                </div>
+                <h5 class="the-name"></h5>
+                <h5 class="mokri2">(alafasy)</h5>
 
-    <script src="./assets/app.js"></script>
-    <!-- <script src="./test.js"></script> -->
-    <script src="./assets/js tools/particles.js-master/particles.min.js"></script>
-    <script src="./assets/js tools/particles.js-master/demo/js/app.js"></script>
-  </body>
+                <div class="controller">
+                    <ul class="list">
+                        <li><i class="fa fa-backward"></i></li>
+                        <li class="play-btn"><i class="fa fa-play"></i></li>
+                        <li class="close-btn hide"><i class="fa fa-pause"></i></li>
+                        <li><i class="fa fa-forward"></i></li>
+                    </ul>
+                    <div class="input-prog">
+                        <div class="val-pgr"></div>
+                    </div>
+                    <div class="timeline">
+                        <h6>00:06:43</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <img class="bottum-sticker" data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+        src="./assets/picture-dynamic-color.svg" alt="">
+    <section class="adkar">
+        <div class="text-en">
+            <h2 class="title">Asad - Muhammad Asad</h2>
+            <p class="text">In the name of God, The Most Gracious, The Dispenser of Grace: - All praise is due to God
+                alone, the Sustainer of all the worlds,</p>
+        </div>
+    </section>
+
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <!-- <script>
+        AOS.init();
+    </script> -->
+    <script src="./app.js"></script>
+</body>
+
+
+<!-- "content_scripts": [ 
+//     {
+//         "matches": [
+//             "https://www.google.com/"
+//         ],
+//         "js": ["app.js"]
+//     }
+// ] -->
+
 </html>
